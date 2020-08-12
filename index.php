@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -9,22 +9,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- Custom Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Awa Inspires Blog</title>
+  <title>Blog Gremis</title>
 </head>
 <body>
   <!-- header -->
   <header class="clearfix">
     <div class="logo">
       <a href="index.php">
-        <h1 class="logo-text"><span>Awa</span>Inspires</h1>
+        <h1 class="logo-text"><span>Gres</span>Blog</h1>
       </a>
     </div>
     <div class="fa fa-reorder menu-toggle"></div>
     <nav>
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="index.php">Inicio</a></li>
+        <li><a href="#">Historia</a></li>
+        <li><a href="#">Servicios</a></li>
         <!-- <li><a href="register.php">Sign up</a></li>
         <li>
           <a href="login.php">
@@ -35,12 +35,12 @@
         <li>
           <a href="#" class="userinfo">
             <i class="fa fa-user"></i>
-            Awa Melvine
+            Gremis Tovar
             <i class="fa fa-chevron-down"></i>
           </a>
           <ul class="dropdown">
-            <li><a href="admin/posts/index.php">Dashboard</a></li>
-            <li><a href="#" class="logout">logout</a></li>
+            <li><a href="admin/posts/index.php">Tablero</a></li>
+            <li><a href="#" class="logout">Salir</a></li>
           </ul>
         </li>
       </ul>
@@ -51,58 +51,58 @@
   <div class="page-wrapper">
     <!-- Posts Slider -->
     <div class="posts-slider">
-      <h1 class="slider-title">Trending Posts</h1>
+      <h1 class="slider-title">Publicaciones de tendencia</h1>
       <i class="fa fa-chevron-right next"></i>
       <i class="fa fa-chevron-left prev"></i>
       <div class="posts-wrapper">
         <div class="post">
           <div class="inner-post">
-            <img src="images/image_7.png" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+            <img src="assets/images/image_7.png" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
             <div class="post-info">
-              <h4><a href="single.php">One day your life will flash before your eyes</a></h3>
+              <h4><a href="single.php">Un día tu vida pasará ante tus ojos</a></h3>
                 <div>
                   <i class="fa fa-user-o"></i> Awa Melvine
                   &nbsp;
-                  <i class="fa fa-calendar"></i> Jan 18, 2019
+                  <i class="fa fa-calendar"></i> 12 de agosto 2020
                 </div>
             </div>
           </div>
         </div>
         <div class="post">
           <div class="inner-post">
-            <img src="images/image_6.png" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+            <img src="assets/images/image_6.png" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
             <div class="post-info">
-              <h4><a href="single.php">One day your life will flash before your eyes</a></h3>
+              <h4><a href="single.php">Un día tu vida pasará ante tus ojos</a></h3>
                 <div>
-                  <i class="fa fa-user-o"></i> Awa Melvine
+                  <i class="fa fa-user-o"></i> Gremis Tovar
                   &nbsp;
-                  <i class="fa fa-calendar"></i> Jan 18, 2019
+                  <i class="fa fa-calendar"></i> 12 de agosto 2020
                 </div>
             </div>
           </div>
         </div>
         <div class="post">
           <div class="inner-post">
-            <img src="images/image_5.png" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+            <img src="assets/images/image_5.png" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
             <div class="post-info">
-              <h4><a href="single.php">One day your life will flash before your eyes</a></h3>
+              <h4><a href="single.php">Un día tu vida pasará ante tus ojos</a></h3>
                 <div>
-                  <i class="fa fa-user-o"></i> Awa Melvine
+                  <i class="fa fa-user-o"></i> Gremis Tovar
                   &nbsp;
-                  <i class="fa fa-calendar"></i> Jan 18, 2019
+                  <i class="fa fa-calendar"></i> 12 de agosto 2020
                 </div>
             </div>
           </div>
         </div>
         <div class="post">
           <div class="inner-post">
-            <img src="images/image_4.png" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+            <img src="assets/images/image_4.png" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
             <div class="post-info">
-              <h4><a href="single.php">One day your life will flash before your eyes</a></h4>
+              <h4><a href="single.php">Un día tu vida pasará ante tus ojos</a></h3>
               <div>
                 <i class="fa fa-user-o"></i> Awa Melvine
                 &nbsp;
-                <i class="fa fa-calendar"></i> Jan 18, 2019
+                <i class="fa fa-calendar"></i> 12 de agosto 2020
               </div>
             </div>
           </div>
@@ -113,50 +113,50 @@
     <!-- content -->
     <div class="content clearfix">
       <div class="page-content">
-        <h1 class="recent-posts-title">Recent Posts</h1>
+        <h1 class="recent-posts-title">Publicaciones Recientes</h1>
         <div class="post clearfix">
-          <img src="images/image_1.png" class="post-image" alt="">
+          <img src="assets/images/image_1.png" class="post-image" alt="">
           <div class="post-content">
-            <h2 class="post-title"><a href="#">The strongest and sweetest songs yet remain to be sung</a></h2>
+            <h2 class="post-title"><a href="#">Las canciones más fuertes y dulces aún quedan por cantar</a></h2>
             <div class="post-info">
-              <i class="fa fa-user-o"></i> Awa Melvine
+              <i class="fa fa-user-o"></i> Gremis Tovar
               &nbsp;
-              <i class="fa fa-calendar"></i> Jan 18, 2019
+              <i class="fa fa-calendar"></i> 12 de agosto 2020
             </div>
             <p class="post-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus expedita tempora
               qui sunt! Ipsum nihil unde obcaecati.
             </p>
-            <a href="#" class="read-more">Read More</a>
+            <a href="#" class="read-more">Leer Más</a>
           </div>
         </div>
         <div class="post clearfix">
-          <img src="images/image_2.png" class="post-image" alt="">
+          <img src="assets/images/image_2.png" class="post-image" alt="">
           <div class="post-content">
-            <h2 class="post-title"><a href="#">That love is all there is, is all we know of love</h2></a>
+            <h2 class="post-title"><a href="#">Ese amor es todo lo que hay, es todo lo que sabemos del amor</h2></a>
             <div class="post-info">
-              <i class="fa fa-user-o"></i> Awa Melvine
+              <i class="fa fa-user-o"></i> Gremis Tovar
               &nbsp;
-              <i class="fa fa-calendar"></i> Jan 18, 2019
+              <i class="fa fa-calendar"></i> 12 de agosto 2020
             </div>
             <p class="post-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus expedita tempora
               qui sunt! Ipsum nihil unde obcaecati.
             </p>
-            <a href="#" class="read-more">Read More</a>
+            <a href="#" class="read-more">Leer Más</a>
           </div>
         </div>
         <div class="post clearfix">
-          <img src="images/image_3.png" class="post-image" alt="">
+          <img src="assets/images/image_3.png" class="post-image" alt="">
           <div class="post-content">
-            <h2 class="post-title"><a href="#">Do anything, but let it produce joy</a></h2>
+            <h2 class="post-title"><a href="#">Haz cualquier cosa, pero deja que produzca alegría</a></h2>
             <div class="post-info">
-              <i class="fa fa-user-o"></i> Awa Melvine
+              <i class="fa fa-user-o"></i> Gremis Tovar
               &nbsp;
-              <i class="fa fa-calendar"></i> Jan 18, 2019
+              <i class="fa fa-calendar"></i> 12 de agosto 2020
             </div>
             <p class="post-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus expedita tempora
               qui sunt! Ipsum nihil unde obcaecati.
             </p>
-            <a href="#" class="read-more">Read More</a>
+            <a href="#" class="read-more">Leer Más</a>
           </div>
         </div>
       </div>
@@ -170,31 +170,31 @@
         <!-- // Search -->
         <!-- topics -->
         <div class="section topics">
-          <h2>Topics</h2>
+          <h2>Tópicos</h2>
           <ul>
             <a href="#">
-              <li>Poems</li>
+              <li>Poemas</li>
             </a>
             <a href="#">
-              <li>Quotes</li>
+              <li>Terror</li>
             </a>
             <a href="#">
-              <li>Fiction</li>
+              <li>Ficción</li>
             </a>
             <a href="#">
-              <li>Biography</li>
+              <li>Biografías</li>
             </a>
             <a href="#">
-              <li>Motivation</li>
+              <li>Motivación</li>
             </a>
             <a href="#">
-              <li>Inspiration</li>
+              <li>Inspiración</li>
             </a>
             <a href="#">
-              <li>Life Lessons</li>
+              <li>Aprendizaje</li>
             </a>
             <a href="#">
-              <li>Self Development</li>
+              <li>Autocrecimiento</li>
             </a>
           </ul>
         </div>
@@ -208,61 +208,59 @@
   <div class="footer">
     <div class="footer-content">
       <div class="footer-section about">
-        <h1 class="logo-text">Awa<span>Inspires</span></h1>
+        <h1 class="logo-text">Gres<span>Blog</span></h1>
         <p>
-          AwaInspires is a fictional blog conceived for the purpose
-          of a tutorial on YouTube. However, Awa has a blog called pieceofadvice.org
-          where he writes truly inspiring stuff.
+          GresBlog es un blog ficticio concebido con el propósito
+          de autoaprender.
         </p>
         <!-- <br> -->
         <div class="contact">
-          <i class="fa fa-phone"> &nbsp; 123-456-789</i>
+          <i class="fa fa-phone"> &nbsp; 1555-555-555</i>
           <i class="fa fa-envelope"> &nbsp; info@mywebsite.com</i>
         </div>
         <div class="social">
           <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
           <a href="#"><i class="fa fa-youtube-play"></i></a>
         </div>
       </div>
       <div class="footer-section quick-links">
-        <h2>QUICK LINKS</h2>
+        <h2>Enlaces</h2>
         <ul>
           <a href="#">
-            <li>Events</li>
+            <li>Eventos</li>
           </a>
           <a href="#">
-            <li>Contact</li>
+            <li>Contactos</li>
           </a>
           <a href="#">
-            <li>Mentors</li>
+            <li>Mentores</li>
           </a>
           <a href="#">
-            <li>Galleries</li>
+            <li>Galerías</li>
           </a>
           <a href="#">
-            <li>Write for us</li>
+            <li>Escríbenos</li>
           </a>
           <a href="#">
-            <li>Terms and conditions</li>
+            <li>Términos y Condiciones</li>
           </a>
         </ul>
       </div>
       <div class="footer-section contact-form-div">
-        <h2>Contact Us</h2>
+        <h2>Contactános</h2>
         <br>
         <form action="index.php" method="post">
-          <input type="text" name="email-address" class="text-input contact-input" placeholder="Your email address">
-          <textarea name="message" cols="30" rows="3" class="text-input contact-input" placeholder="Message..."></textarea>
+          <input type="text" name="email-address" class="text-input contact-input" placeholder="Tu correo electrónico">
+          <textarea name="message" cols="30" rows="3" class="text-input contact-input" placeholder="Mensaje..."></textarea>
           <button type="submit" name="send-msg-btn" class="send-msg-btn">
-            <i class="fa fa-send"></i> Send
+            <i class="fa fa-send"></i> Enviar
           </button>
         </form>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© Coding Poets | Designed by Awa Melvine</p>
+      <p>© Derechos No Reservados | Diseñado por Gremis Tovar</p>
     </div>
   </div>
   <!-- // FOOTER -->
