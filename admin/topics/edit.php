@@ -8,9 +8,9 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../assets/css/style.css">
   <!-- Admin Styling -->
-  <link rel="stylesheet" href="../../admin.css">
+  <link rel="stylesheet" href="../../assets/css/admin.css">
   <title>Admin - Update Topic</title>
 </head>
 <body>
@@ -78,6 +78,6 @@
   <!-- CKEditor 5 -->
   <script src="https://cdn.ckeditor.com/ckeditor5/11.2.0/classic/ckeditor.js"></script>
   <!-- Custome Scripts -->
-  <script src="../../scripts.js"></script>
+  <script src="../../assets/js/script.js"></script>
 </body>
 </html>

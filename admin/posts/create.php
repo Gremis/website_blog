@@ -10,7 +10,7 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="../../assets/css/style.css">
   <!-- Admin Styling -->
-  <link rel="stylesheet" href="../../admin.css">
+  <link rel="stylesheet" href="../../assets/css/admin.css">
   <title>Admin - Create Post</title>
 </head>
 <body>

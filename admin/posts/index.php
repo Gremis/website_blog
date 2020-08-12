@@ -8,9 +8,9 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../assets/css/style.css">
   <!-- Admin Styling -->
-  <link rel="stylesheet" href="../../admin.css">
+  <link rel="stylesheet" href="../../assets/css/admin.css">
   <title>Admin - Manage Posts</title>
 </head>
 <body>
@@ -138,6 +138,6 @@
   </div>
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="../../scripts.js"></script>
+  <script src="../../assets/js/script.js"></script>
 </body>
 </html>
