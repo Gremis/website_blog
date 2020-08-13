@@ -14,7 +14,7 @@ a {
 }
 
 a:hover, a:active {
-  color: #008489;
+  color: #5e0089;
 }
 
 .logo-text, h1, h2, h3, h4, h5, h6 {
@@ -46,9 +46,9 @@ a:hover, a:active {
 }
 
 .success {
-  color: #3a6e3a;
+  color: #643a6e;
   background: #bcf5bc;
-  border: 1px solid #3a6e3a;
+  border: 1px solid #643a6e;
 }
 
 .btn {
@@ -62,7 +62,7 @@ a:hover, a:active {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;
-  background: #008489;
+  background: #720089;
   color: #fff;
 }
 
@@ -74,7 +74,7 @@ a:hover, a:active {
 
 .btn:hover {
   cursor: pointer;
-  background: #00767a;
+  background: #4d007a;
 }
 
 .input-group {
@@ -115,7 +115,7 @@ a:hover, a:active {
 /* NAVBAR */
 
 header {
-  background: #008489;
+  background: #720089;
   color: #ffffff;
   height: 66px;
 }
@@ -137,7 +137,7 @@ header a:hover {
 }
 
 .logo-text span {
-  color: #6ed6e9;
+  color: #bc6ee9;
 }
 
 header nav {
@@ -162,7 +162,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: #006669;
+  background: #540069;
   transition: 0.5s;
 }
 
@@ -237,7 +237,7 @@ header nav ul .userinfo i.fa-chevron-down {
   top: 50%;
   z-index: 100;
   font-size: 2em;
-  color: #008489;
+  color: #720089;
   cursor: pointer;
 }
 
@@ -247,7 +247,7 @@ header nav ul .userinfo i.fa-chevron-down {
   top: 50%;
   z-index: 100;
   font-size: 2em;
-  color: #008489;
+  color: #720089;
   cursor: pointer;
 }
 
@@ -388,7 +388,7 @@ header nav ul .userinfo i.fa-chevron-down {
   text-decoration: none;
   color: inherit;
   text-align: center;
-  border: 1px solid #8BC7C9;
+  border: 1px solid #c28bc9;
   padding: 8px 15px;
   border-radius: 0px;
   position: absolute;
@@ -398,8 +398,8 @@ header nav ul .userinfo i.fa-chevron-down {
 
 .content .page-content .post .read-more:hover {
   color: white;
-  background: #008489;
-  border: 1px solid #008489;
+  background: #720089;
+  border: 1px solid #720089;
   transition: .5s;
 }
 
@@ -542,7 +542,7 @@ header nav ul .userinfo i.fa-chevron-down {
 
 .footer .footer-content .contact-form-div .send-msg-btn {
   float: right;
-  background: #008489;
+  background: #720089;
   color: #d3d3d3;
   cursor: pointer;
   border: none;
@@ -571,7 +571,7 @@ header nav ul .userinfo i.fa-chevron-down {
   }
   nav {
     width: 100%;
-    background: #0E94A0;
+    background: #830ea0;
   }
   nav ul {
     max-height: 0px;
@@ -595,13 +595,13 @@ header nav ul .userinfo i.fa-chevron-down {
     width: 100%;
   }
   header nav ul li .dropdown li a {
-    background: #0E94A0;
+    background: #830ea0;
     color: white;
     padding: 15px;
     padding-left: 50px;
   }
   header nav ul li .dropdown li a:hover {
-    background: #0E94A0;
+    background: #830ea0;
   }
 }
 

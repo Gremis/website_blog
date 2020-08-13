@@ -12,7 +12,7 @@ header {
     width: 20%;
     height: 100%;
     float: left;
-    background: #013638;
+    background: #2b0138;
   }
   
   .admin-wrapper .left-sidebar ul {
@@ -23,7 +23,7 @@ header {
   }
   
   .admin-wrapper .left-sidebar ul li {
-    border-bottom: 1px solid #6da6aa;
+    border-bottom: 1px solid #8a6daa;
   }
   
   .admin-wrapper .left-sidebar ul li a {
@@ -69,12 +69,12 @@ header {
   @media (max-width: 768px) {
     nav {
       width: 100%;
-      background: #054247;
+      background: #470544;
     }
     header nav ul li .dropdown li a {
-      background: #054247;
+      background: #470544;
     }
     header nav ul li .dropdown li a:hover {
-      background: #054247;
+      background: #470544;
     }
   }

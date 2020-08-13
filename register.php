@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -9,27 +9,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Register</title>
+  <title>Regístrate</title>
 </head>
 <body>
   <!-- header -->
   <header class="clearfix">
     <div class="logo">
       <a href="index.php">
-        <h1 class="logo-text"><span>Awa</span>Inspires</h1>
+        <h1 class="logo-text"><span>Gres</span>Blog</h1>
       </a>
     </div>
     <div class="fa fa-reorder menu-toggle"></div>
     <nav>
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="register.php">Sign up</a></li>
+        <li><a href="index.php">Inicio</a></li>
+        <li><a href="#">Historia</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="register.php">Regístrate</a></li>
         <li>
           <a href="login.php">
             <i class="fa fa-sign-in"></i>
-            Login
+            Entrar
           </a>
         </li>
         <!-- <li>
@@ -49,34 +49,34 @@
   <!-- // header -->
   <div class="auth-content">
     <form action="register.php" method="post">
-      <h3 class="form-title">Register</h3>
+      <h3 class="form-title">Regístrate</h3>
       <!-- <div class="msg error">
         <li>Username required</li>
       </div> -->
       <div>
-        <label>Username</label>
+        <label>Usuario</label>
         <input type="text" name="username" class="text-input">
       </div>
       <div>
-        <label>Email</label>
+        <label>Correo Electrónico</label>
         <input type="email" name="email" class="text-input">
       </div>
       <div>
-        <label>Password</label>
+        <label>Contraseña</label>
         <input type="password" name="password" class="text-input">
       </div>
       <div>
-        <label>Confirm Password</label>
+        <label>Confirma Contraseña</label>
         <input type="password" name="passwordConf" class="text-input">
       </div>
       <div>
-        <button type="submit" name="register-btn" class="btn">Register</button>
+        <button type="submit" name="register-btn" class="btn">Registrar</button>
       </div>
-      <p class="auth-nav">Or <a href="login.php">Sign In</a></p>
+      <p class="auth-nav"><a href="login.php">Entrar</a></p>
     </form>
   </div>
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="scripts.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../../assets/css/style.css">
   <!-- Admin Styling -->
   <link rel="stylesheet" href="../../assets/css/admin.css">
-  <title>Admin - Manage Drafts</title>
+  <title>Admin - Administrar borradores</title>
 </head>
 <body>
   <!-- header -->
@@ -22,16 +22,16 @@
     <div class="fa fa-reorder menu-toggle"></div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#">Inicio</a></li>
         <li>
           <a href="#" class="userinfo">
             <i class="fa fa-user"></i>
-            Awa Melvine
+            Gremis Tovar
             <i class="fa fa-chevron-down"></i>
           </a>
           <ul class="dropdown">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#" class="logout">logout</a></li>
+            <li><a href="#">Tablero</a></li>
+            <li><a href="#" class="logout">Salir</a></li>
           </ul>
         </li>
       </ul>
@@ -41,93 +41,93 @@
   <div class="admin-wrapper clearfix">
     <!-- Left Sidebar -->
     <div class="left-sidebar">
-      <ul>
-        <li><a href="index.php">Manage Posts</a></li>
-        <li><a href="../topics/index.php">Manage Topics</a></li>
-        <li><a href="../users/index.php">Manage Users</a></li>
+    <ul>
+        <li><a href="index.php">Administrar Publicaciones</a></li>
+        <li><a href="../topics/index.php">Administrar Temas</a></li>
+        <li><a href="../users/index.php">Administrar Usuarios</a></li>
       </ul>
     </div>
     <!-- // Left Sidebar -->
     <!-- Admin Content -->
     <div class="admin-content clearfix">
       <div class="button-group">
-        <a href="create.php" class="btn btn-sm">Add Post</a>
-        <a href="index.php" class="btn btn-sm">Manage Posts</a>
-        <a href="index.php" class="btn btn-sm">Manage Drafts</a>
+        <a href="create.php" class="btn btn-sm">Agregar Publicaciones</a>
+        <a href="index.php" class="btn btn-sm">Administrar Publicaciones</a>
+        <a href="index.php" class="btn btn-sm">Administrar Borradores</a>
       </div>
       <div class="">
-        <h2 style="text-align: center;">Manage Drafts</h2>
+        <h2 style="text-align: center;">Administrar Borradores</h2>
         <table>
           <thead>
             <th>N</th>
-            <th>Title</th>
-            <th>Author</th>
-            <th colspan="3">Action</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th colspan="3">Acción</th>
           </thead>
           <tbody>
             <tr class="rec">
               <td>1</td>
               <td>
-                <a href="#">A replacement for new year resolutions - a 12 months challenge</a>
+                <a href="#">Un reemplazo para las resoluciones de año nuevo: un desafío de 12 meses</a>
               </td>
-              <td>Awa</td>
+              <td>Gremis</td>
               <td>
                 <a href="#" class="edit">
-                  Edit
+                  Editar
                 </a>
               </td>
               <td>
                 <a href="#" class="delete">
-                  Delete
+                  Eliminar
                 </a>
               </td>
               <td>
                 <a href="#" class="publish">
-                  Publish
+                  Publicar
                 </a>
               </td>
             </tr>
             <tr class="rec">
               <td>2</td>
               <td>
-                <a href="#">Why life is beautiful</a>
+                <a href="#">Por que la vida es bella</a>
               </td>
-              <td>Awa</td>
+              <td>Gremis</td>
               <td>
                 <a href="#" class="edit">
-                  Edit
+                  Editar
                 </a>
               </td>
               <td>
                 <a href="#" class="delete">
-                  Delete
+                  Eliminar
                 </a>
               </td>
               <td>
                 <a href="#" class="publish">
-                  Publish
+                  Publicar
                 </a>
               </td>
             </tr>
             <tr class="rec">
               <td>3</td>
               <td>
-                <a href="#">Interesting facts about the history of the world</a>
+                <a href="#">Datos interesantes sobre la historia del mundo</a>
               </td>
-              <td>Awa</td>
+              <td>Gremis</td>
               <td>
                 <a href="#" class="edit">
-                  Edit
+                  Editar
                 </a>
               </td>
               <td>
                 <a href="#" class="delete">
-                  Delete
+                  Eliminar
                 </a>
               </td>
               <td>
                 <a href="#" class="publish">
-                  Publish
+                  Publicar
                 </a>
               </td>
             </tr>

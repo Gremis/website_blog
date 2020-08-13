@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../../assets/css/style.css">
   <!-- Admin Styling -->
   <link rel="stylesheet" href="../../assets/css/admin.css">
-  <title>Admin - Manage Users</title>
+  <title>Admin - Administrar Usuarios</title>
 </head>
 <body>
   <!-- header -->
@@ -22,16 +22,16 @@
     <div class="fa fa-reorder menu-toggle"></div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#">Inicio</a></li>
         <li>
           <a href="#" class="userinfo">
             <i class="fa fa-user"></i>
-            Awa Melvine
+            Gremis Tovar
             <i class="fa fa-chevron-down"></i>
           </a>
           <ul class="dropdown">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#" class="logout">logout</a></li>
+            <li><a href="#">Tablero</a></li>
+            <li><a href="#" class="logout">Salir</a></li>
           </ul>
         </li>
       </ul>
@@ -41,41 +41,41 @@
   <div class="admin-wrapper clearfix">
     <!-- Left Sidebar -->
     <div class="left-sidebar">
-      <ul>
-        <li><a href="index.php">Manage Posts</a></li>
-        <li><a href="../topics/index.php">Manage Topics</a></li>
-        <li><a href="../users/index.php">Manage Users</a></li>
+    <ul>
+        <li><a href="../posts/index.php">Administrar Publicaciones</a></li>
+        <li><a href="../topics/index.php">Administrar Temas</a></li>
+        <li><a href="../users/index.php">Administrar Usuarios</a></li>
       </ul>
     </div>
     <!-- // Left Sidebar -->
     <!-- Admin Content -->
     <div class="admin-content clearfix">
       <div class="button-group">
-        <a href="create.php" class="btn btn-sm">Add User</a>
-        <a href="index.php" class="btn btn-sm">Manage Users</a>
+        <a href="create.php" class="btn btn-sm">Agregar Usuario</a>
+        <a href="index.php" class="btn btn-sm">Administrar Usuario</a>
       </div>
       <div class="">
-        <h2 style="text-align: center;">Manage Users</h2>
+        <h2 style="text-align: center;">Administrar Usuarios</h2>
         <table>
           <thead>
             <th>N</th>
-            <th>Username</th>
-            <th colspan="3">Action</th>
+            <th>Usuario</th>
+            <th colspan="3">Acción</th>
           </thead>
           <tbody>
             <tr class="rec">
               <td>1</td>
               <td>
-                <a href="#">Awa Melvine</a>
+                <a href="#">Gremis Tovar</a>
               </td>
               <td>
                 <a href="edit.php" class="edit">
-                  Edit
+                  Editar
                 </a>
               </td>
               <td>
                 <a href="#" class="delete">
-                  Delete
+                  Eliminar
                 </a>
               </td>
             </tr>

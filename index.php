@@ -61,7 +61,7 @@
             <div class="post-info">
               <h4><a href="single.php">Un día tu vida pasará ante tus ojos</a></h3>
                 <div>
-                  <i class="fa fa-user-o"></i> Awa Melvine
+                  <i class="fa fa-user-o"></i> Gremis Tovar
                   &nbsp;
                   <i class="fa fa-calendar"></i> 12 de agosto 2020
                 </div>
@@ -100,7 +100,7 @@
             <div class="post-info">
               <h4><a href="single.php">Un día tu vida pasará ante tus ojos</a></h3>
               <div>
-                <i class="fa fa-user-o"></i> Awa Melvine
+                <i class="fa fa-user-o"></i> Gremis Tovar
                 &nbsp;
                 <i class="fa fa-calendar"></i> 12 de agosto 2020
               </div>
@@ -260,7 +260,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© Derechos No Reservados | Diseñado por Gremis Tovar</p>
+      <p>© Derechos Reservados | Diseñado por Gremis Tovar</p>
     </div>
   </div>
   <!-- // FOOTER -->

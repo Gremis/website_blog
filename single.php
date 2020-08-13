@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -8,8 +8,8 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-  <title>Motivational Blog</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Blog Motivacional</title>
 </head>
 <body>
   <div id="fb-root"></div>
@@ -28,20 +28,20 @@
   <header class="clearfix">
     <div class="logo">
       <a href="index.php">
-        <h1 class="logo-text"><span>Awa</span>Inspires</h1>
+        <h1 class="logo-text"><span>Gres</span>Blog</h1>
       </a>
     </div>
     <div class="fa fa-reorder menu-toggle"></div>
     <nav>
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="register.php">Sign up</a></li>
+        <li><a href="index.php">Inicio</a></li>
+        <li><a href="#">Historia</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="register.php">Regístrate</a></li>
         <li>
           <a href="login.php">
             <i class="fa fa-sign-in"></i>
-            Login
+            Entrar
           </a>
         </li>
         <!-- <li>
@@ -64,127 +64,127 @@
     <!-- content -->
     <div class="content clearfix">
       <div class="page-content single">
-        <h2 style="text-align: center;">A replacement for new year resolutions - A 12 months challenge</h2>
+        <h2 style="text-align: center;">Un reemplazo para las resoluciones de año nuevo: un desafío de 12 meses</h2>
         <br>
-        <p>Many times I have come across instances where some people scorn the practice of setting New Year Resolutions.
+        <p>Muchas veces me he encontrado con casos en los que algunas personas desdeñan la práctica de establecer Resoluciones de Año Nuevo.
         </p>
-        <p>Their reason for this goes something like this:</p>
-        <p>The very word resolution is an indication of some form of internal conflict springing from an ineffectual
-          self-governance in a person. It means the individual is waging a fight against something undesirable in their
-          life; or is making a conscious decision to pursue certain ideals that before were absent in their life.</p>
-        <p>Aren’t you supposed to be pursuing these ideals every day of your life? Isn’t it supposed to be the default
-          state of your life? Why would you wait for a new year before you make a resolution to better your life?</p>
-        <p>Such people also avoid new year resolutions or scorn the practice thereof because for them, experience has
-          proven it to be ineffective.</p>
-        <p>I don’t entirely agree with such people. I am not advocating the practice of new year resolutions either. But
-          I’d sooner advise a person to set new year resolutions they will end up abandoning by the end of January than
-          advise them to sleepwalk through their life the entire year.</p>
-        <p>At the very least, setting new year resolutions means that you still have an interest in making your life
-          better, and that is a good place to start. You just need a better strategy than new year resolutions, which is
-          what I bring to the table today.</p>
-        <p>I call it The <i>12 months challenge.</i></p>
-        <p>This challenge is simple: At the end of the year, write and publish an article in which you list 12 of your
-          proudest, most fulfilling accomplishments from each of the 12 months of that year. Be very strict with the
-          rules of the challenge: Pick only one accomplishment per month.</p>
-        <p>You are free to accomplish as many things in a month as you can but pick only one to be added to the list for
-          any particular month.</p>
-        <p>Publish this article on your blog (if you have one), on your linkedIn profile, and on any of the social media
-          platforms; share it with your close network of trusted family members, friends, colleagues and mentors.</p>
-        <p>It is very important that you share the article to as wide an audience as possible if the contents are not
-          too private. Sharing such an article can help you connect with other individuals with shared interests,
-          dreams, and plans for the future. And such connections can open doors for you and a lot of other people that
-          you never knew existed.</p>
-        <p>Most importantly, if you know you are preparing the article to share it with other people, you are more
-          likely to take it very seriously.</p>
-        <p>One thing I almost avoided mentioning is the nature of these accomplishments. I’m avoiding this aspect of the
-          challenge because I can’t really tell you what you should aim at accomplishing in your life in order to feel
-          fulfilled. You are going to have to do that yourself because only you can do it best. It is your purpose. You
-          may think you don’t know it yet but at some deeper level you do.</p>
-        <p>I can only tell you what works for me: I have a few questions I usually ask myself when I feel that I am not
-          living a fulfilling life at any time in my life. At such times I ask myself:</p>
-        <p>If I were to be diagnosed with terminal cancer and given only 6 months to live, how would I spend that time?
-          What things would I value most? What would I regret not doing?</p>
-        <p>For me, the answers to such questions immediately and unmistakably stand out clear in my mind:</p>
-        <p>I would regret not taking better care of my parents than what I am doing. They have toiled and soiled far too
-          much for me to be ordinary.<br>I would grieve in my spirit at all those years I felt timid and settled for far
-          far less than I am worth.</p>
-        <p>I would regret my passivity in relationships with all those amazing people who have once featured in my life
-          and left because of my apparent disinterest. I could have swallowed my pride and risked exposing my
-          insecurities, my quirks and my shortcomings in general. Hiding them only made me look uninterested.</p>
-        <p>I would regret all those hours I wasted feeling bored when I could have set up a blog to explore my passion
-          for writing.</p>
-        <p>I could have read more and more books.</p>
-        <p>I would regret never having taken any steps towards realizing all those side projects I kept conceiving day
-          after day in my mind.</p>
-        <p>And many more...</p>
-        <p>When you ask yourself the above questions, the answers will pop up almost immediately and they will fill you
-          with a new vitality and enthusiasm towards your life goals.</p>
-        <p>Now assume your time from now on is as limited and valuable as it could be if the above assumption about
-          cancer were real. Then start working on these projects one month at a time. Start living your unlived life one
-          month at a time.</p>
-        <p>When you publish this article at the end of the year, can you please share it with me. I would love to see
-          you take that life by the throat. You can mail the link to the article to me at melvineawa@gmail.com.</p>
+        <p>Su razón de esto es algo como esto:</p>
+        <p>La misma palabra resolución es una indicación de alguna forma de conflicto interno que surge de una ineficacia
+          autogobierno en una persona. Significa que el individuo está luchando contra algo indeseable en su
+          vida; o está tomando una decisión consciente de perseguir ciertos ideales que antes estaban ausentes en su vida.</p>
+        <p>¿No se supone que debes perseguir estos ideales todos los días de tu vida? ¿No se supone que es el predeterminado?
+          estado de tu vida? ¿Por qué esperarías un año nuevo antes de tomar una decisión para mejorar tu vida?</p>
+        <p>Estas personas también evitan las resoluciones de año nuevo o desprecian su práctica porque para ellas, la experiencia ha
+          demostró que es ineficaz.</p>
+        <p>No estoy del todo de acuerdo con esas personas. Tampoco estoy defendiendo la práctica de las resoluciones de año nuevo. Pero
+          Preferiría aconsejar a una persona que establezca resoluciones de año nuevo que acabarán abandonando a finales de enero que
+          Aconsejarles que caminen sonámbulos durante todo el año.</p>
+        <p>Como mínimo, establecer resoluciones de año nuevo significa que todavía tienes interés en hacer tu vida
+          mejor, y ese es un buen lugar para comenzar. Solo necesita una mejor estrategia que las resoluciones de año nuevo, que es
+          lo que traigo a la mesa hoy.</p>
+        <p>Yo lo llamo el <i>desafio de 12 años.</i></p>
+        <p>Este desafío es simple: al final del año, escriba y publique un artículo en el que enumere 12 de sus
+          los logros más orgullosos y satisfactorios de cada uno de los 12 meses de ese año. Sea muy estricto con el
+          reglas del desafío: elige solo un logro por mes.</p>
+        <p>Eres libre de lograr tantas cosas en un mes como puedas, pero elige solo una para agregar a la lista
+          cualquier mes en particular.</p>
+        <p>Publique este artículo en su blog (si tiene uno), en su perfil de linkIn y en cualquiera de las redes sociales
+          plataformas; compártelo con tu red cercana de familiares, amigos, colegas y mentores de confianza.</p>
+        <p>Es muy importante que comparta el artículo con una audiencia lo más amplia posible si el contenido no es
+          demasiado privado. Compartir un artículo de este tipo puede ayudarlo a conectarse con otras personas con intereses compartidos,
+          sueños y planes para el futuro. Y tales conexiones pueden abrir puertas para ti y para muchas otras personas que
+          nunca supiste que existía.</p>
+        <p>Lo más importante es que si sabe que está preparando el artículo para compartirlo con otras personas, está más
+          probablemente lo tome muy en serio.</p>
+        <p>Una cosa que casi evito mencionar es la naturaleza de estos logros. Estoy evitando este aspecto del
+          desafío porque realmente no puedo decirte lo que debes apuntar a lograr en tu vida para sentirte
+          cumplido. Vas a tener que hacerlo tú mismo porque solo tú puedes hacerlo mejor. Es tu propósito. Tú
+          puede pensar que aún no lo sabe, pero en un nivel más profundo lo sabe.</p>
+        <p>Yo solo puedo decirte lo que funciona para mí: tengo algunas preguntas que generalmente me hago cuando siento que no estoy
+          vivir una vida plena en cualquier momento de mi vida. En esos momentos me pregunto:</p>
+        <p>Si me diagnosticaran cáncer terminal y solo me dieran 6 meses de vida, ¿cómo pasaría ese tiempo?
+          ¿Qué cosas valoraría más? ¿Qué me arrepentiría de no haber hecho?</p>
+        <p>Para mí, las respuestas a tales preguntas de forma inmediata e inequívoca se destacan claramente en mi mente:</p>
+        <p>Me arrepentiría de no haber cuidado mejor a mis padres de lo que estoy haciendo. Ellos han trabajado y ensuciado demasiado
+          mucho para mí ser ordinario.<br>Me afligiría en mi espíritu todos esos años en los que me sentí tímido y me conformé por mucho
+          mucho menos de lo que valgo.</p>
+        <p>Me arrepiento de mi pasividad en las relaciones con todas esas personas increíbles que alguna vez han aparecido en mi vida.
+          y me fui por mi aparente desinterés. Podría haberme tragado mi orgullo y arriesgarme a exponer mi
+          inseguridades, mis peculiaridades y mis defectos en general. Ocultarlos solo me hizo parecer desinteresado.</p>
+        <p>Me arrepentiría de todas esas horas que perdí sintiéndome aburrido cuando podría haber creado un blog para explorar mi pasión.
+          para la escritura.</p>
+        <p>Podría haber leído más y más libros.</p>
+        <p>Me arrepentiría de no haber dado ningún paso hacia la realización de todos esos proyectos paralelos que seguí concibiendo al día.
+          después de un día en mi mente.</p>
+        <p>Y muchas más...</p>
+        <p>Cuando se haga las preguntas anteriores, las respuestas aparecerán casi de inmediato y lo llenarán
+          con una nueva vitalidad y entusiasmo hacia sus metas de vida.</p>
+        <p>Ahora suponga que su tiempo de ahora en adelante es tan limitado y valioso como podría ser si la suposición anterior sobre
+          el cáncer era real. Luego comience a trabajar en estos proyectos mes a mes. Empieza a vivir tu vida no vivida
+          mes a la vez.</p>
+        <p>Cuando publique este artículo a fin de año, ¿podría compartirlo conmigo? Me encantaría ver
+          tomas esa vida por el cuello. Puede enviarme el enlace del artículo a melvineawa@gmail.com.</p>
       </div>
       <div class="sidebar single">
         <!-- fb page -->
         <div class="fb-page" data-href="https://www.facebook.com/Piece-of-Advice-1055745464557488/"
           data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
           <blockquote cite="https://www.facebook.com/Piece-of-Advice-1055745464557488/" class="fb-xfbml-parse-ignore"><a
-              href="https://www.facebook.com/Piece-of-Advice-1055745464557488/">Piece of Advice</a></blockquote>
+              href="https://www.facebook.com/Piece-of-Advice-1055745464557488/">Consejo</a></blockquote>
         </div>
         <!-- // fb page -->
         <!-- Popular Posts -->
         <div class="section popular">
           <h2>Popular</h2>
           <div class="post clearfix">
-            <img src="images/image_1.png">
-            <a href="#" class="title">How to act inspite of your emotions</a>
+            <img src="assets/images/image_1.png">
+            <a href="#" class="title">Cómo actuar a pesar de tus emociones</a>
           </div>
           <div class="post clearfix">
-            <img src="images/image_2.png">
-            <a href="#" class="title">How to act inspite of your emotions</a>
+            <img src="assets/images/image_2.png">
+            <a href="#" class="title">Cómo actuar a pesar de tus emociones</a>
           </div>
           <div class="post clearfix">
-            <img src="images/image_3.png">
-            <a href="#" class="title">How to act inspite of your emotions</a>
+            <img src="assets/images/image_3.png">
+            <a href="#" class="title">Cómo actuar a pesar de tus emociones</a>
           </div>
           <div class="post clearfix">
-            <img src="images/image_4.png">
-            <a href="#" class="title">How to act inspite of your emotions</a>
+            <img src="assets/images/image_4.png">
+            <a href="#" class="title">Cómo actuar a pesar de tus emociones</a>
           </div>
           <div class="post clearfix">
-            <img src="images/image_5.png">
-            <a href="#" class="title">How to act inspite of your emotions</a>
+            <img src="assets/images/image_5.png">
+            <a href="#" class="title">Cómo actuar a pesar de tus emociones</a>
           </div>
         </div>
         <!-- // Popular Posts -->
         <!-- topics -->
         <div class="section topics">
-          <h2>Topics</h2>
+          <h2>Temas</h2>
           <ul>
             <a href="#">
-              <li>Poems</li>
+              <li>Poemas</li>
             </a>
             <a href="#">
-              <li>Quotes</li>
+              <li>Citas</li>
             </a>
             <a href="#">
-              <li>Fiction</li>
+              <li>Ficción</li>
             </a>
             <a href="#">
-              <li>Biography</li>
+              <li>Biografía</li>
             </a>
             <a href="#">
-              <li>Motivation</li>
+              <li>Motivación</li>
             </a>
             <a href="#">
-              <li>Inspiration</li>
+              <li>Inspiración</li>
             </a>
             <a href="#">
-              <li>Life Lessons</li>
+              <li>Lecciones de vida</li>
             </a>
             <a href="#">
-              <li>Self Development</li>
+              <li>Autodesarrollo</li>
             </a>
           </ul>
         </div>
@@ -198,7 +198,7 @@
   <div class="footer">
     <div class="footer-content">
       <div class="footer-section about">
-        <h2>About</h2>
+        <h2>Historia</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           Accusantium aperiam iusto aspernatur neque dolore mollitia?
@@ -211,48 +211,47 @@
         <div class="social">
           <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
           <a href="#"><i class="fa fa-youtube-play"></i></a>
         </div>
       </div>
       <div class="footer-section quick-links">
-        <h2>QUICK LINKS</h2>
+        <h2>ENLACES</h2>
         <ul>
           <a href="#">
-            <li>Events</li>
+            <li>Eventos</li>
           </a>
           <a href="#">
-            <li>Contact</li>
+            <li>Contactos</li>
           </a>
           <a href="#">
-            <li>Mentors</li>
+            <li>Mentores</li>
           </a>
           <a href="#">
-            <li>Galleries</li>
+            <li>Galerías</li>
           </a>
           <a href="#">
-            <li>Write for us</li>
+            <li>Escríbenos</li>
           </a>
           <a href="#">
-            <li>Terms and conditions</li>
+            <li>Términos y condiciones</li>
           </a>
         </ul>
       </div>
       <div class="footer-section contact-form-div">
-        <h2>Contact Us</h2>
+        <h2>Contáctanos</h2>
         <br>
         <form action="index.php" method="post">
           <input type="text" name="email-address" class="text-input contact-input" placeholder="Your email address">
           <textarea name="message" cols="30" rows="3" class="text-input contact-input"
             placeholder="Message..."></textarea>
           <button type="submit" name="send-msg-btn" class="send-msg-btn">
-            <i class="fa fa-send"></i> Send
+            <i class="fa fa-send"></i> Enviar
           </button>
         </form>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© Coding Poets | Designed by Awa Melvine</p>
+    <p>© Derechos Reservados | Diseñado por Gremis Tovar</p>
     </div>
   </div>
   <!-- // FOOTER -->
@@ -260,6 +259,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Slick JS -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="scripts.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
