@@ -1,3 +1,5 @@
+<?php include ("path.php"); ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,41 +14,9 @@
   <title>Inicia Sesión</title>
 </head>
 <body>
-  <!-- header -->
-  <header class="clearfix">
-    <div class="logo">
-      <a href="index.php">
-        <h1 class="logo-text"><span>Gres</span>Blog</h1>
-      </a>
-    </div>
-    <div class="fa fa-reorder menu-toggle"></div>
-    <nav>
-      <ul>
-        <li><a href="index.php">Inicio</a></li>
-        <li><a href="#">Historia</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="register.php">Regístrate</a></li>
-        <li>
-          <a href="login.php">
-            <i class="fa fa-sign-in"></i>
-            Entrar
-          </a>
-        </li>
-        <!-- <li>
-          <a href="#" class="userinfo">
-            <i class="fa fa-user"></i>
-            Awa Melvine
-            <i class="fa fa-chevron-down"></i>
-          </a>
-          <ul class="dropdown">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#" class="logout">logout</a></li>
-          </ul>
-        </li> -->
-      </ul>
-    </nav>
-  </header>
-  <!-- // header -->
+
+<?php include (ROOT_PATH . '/app/includes/header.php');?>
+
   <div class="auth-content">
     <form action="login.php" method="post">
       <h3 class="form-title">Inicia Sesión</h3>
@@ -64,7 +34,7 @@
       <div>
         <button type="submit" name="login-btn" class="btn">Entrar</button>
       </div>
-      <p class="auth-nav"><a href="register.php">Regístrate</a></p>
+      <p class="auth-nav"><a href="<?php echo BASE_URL . 'register.php' ?>">Regístrate</a></p>
     </form>
   </div>
   <!-- JQuery -->

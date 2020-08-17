@@ -1,3 +1,5 @@
+<?php include ("path.php"); ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -24,41 +26,9 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
   </script>
-  <!-- header -->
-  <header class="clearfix">
-    <div class="logo">
-      <a href="index.php">
-        <h1 class="logo-text"><span>Gres</span>Blog</h1>
-      </a>
-    </div>
-    <div class="fa fa-reorder menu-toggle"></div>
-    <nav>
-      <ul>
-        <li><a href="index.php">Inicio</a></li>
-        <li><a href="#">Historia</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="register.php">Regístrate</a></li>
-        <li>
-          <a href="login.php">
-            <i class="fa fa-sign-in"></i>
-            Entrar
-          </a>
-        </li>
-        <!-- <li>
-          <a href="#" class="userinfo">
-            <i class="fa fa-user"></i>
-            Awa Melvine
-            <i class="fa fa-chevron-down"></i>
-          </a>
-          <ul class="dropdown">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#" class="logout">logout</a></li>
-          </ul>
-        </li> -->
-      </ul>
-    </nav>
-  </header>
-  <!-- // header -->
+  
+  <?php include (ROOT_PATH . '/app/includes/header.php');?>
+
   <!-- Page wrapper -->
   <div class="page-wrapper">
     <!-- content -->
@@ -194,67 +164,9 @@
     <!-- // content -->
   </div>
   <!-- // page wrapper -->
-  <!-- FOOTER -->
-  <div class="footer">
-    <div class="footer-content">
-      <div class="footer-section about">
-        <h2>Historia</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Accusantium aperiam iusto aspernatur neque dolore mollitia?
-        </p>
-        <!-- <br> -->
-        <div class="contact">
-          <i class="fa fa-phone"> &nbsp; 123-456-789</i>
-          <i class="fa fa-envelope"> &nbsp; info@mywebsite.com</i>
-        </div>
-        <div class="social">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-youtube-play"></i></a>
-        </div>
-      </div>
-      <div class="footer-section quick-links">
-        <h2>ENLACES</h2>
-        <ul>
-          <a href="#">
-            <li>Eventos</li>
-          </a>
-          <a href="#">
-            <li>Contactos</li>
-          </a>
-          <a href="#">
-            <li>Mentores</li>
-          </a>
-          <a href="#">
-            <li>Galerías</li>
-          </a>
-          <a href="#">
-            <li>Escríbenos</li>
-          </a>
-          <a href="#">
-            <li>Términos y condiciones</li>
-          </a>
-        </ul>
-      </div>
-      <div class="footer-section contact-form-div">
-        <h2>Contáctanos</h2>
-        <br>
-        <form action="index.php" method="post">
-          <input type="text" name="email-address" class="text-input contact-input" placeholder="Your email address">
-          <textarea name="message" cols="30" rows="3" class="text-input contact-input"
-            placeholder="Message..."></textarea>
-          <button type="submit" name="send-msg-btn" class="send-msg-btn">
-            <i class="fa fa-send"></i> Enviar
-          </button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-bottom">
-    <p>© Derechos Reservados | Diseñado por Gremis Tovar</p>
-    </div>
-  </div>
-  <!-- // FOOTER -->
+
+  <?php include (ROOT_PATH . '/app/includes/footer.php');?>
+
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Slick JS -->
