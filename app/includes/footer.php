@@ -42,7 +42,7 @@
         </ul>
       </div>
       <div class="footer-section contact-form-div">
-        <h2>Contactános</h2>
+        <h2>Contáctanos</h2>
         <br>
         <form action="index.php" method="post">
           <input type="text" name="email-address" class="text-input contact-input" placeholder="Tu correo electrónico">
