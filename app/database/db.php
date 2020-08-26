@@ -66,12 +66,59 @@ function selectOne($table, $conditions)
     return $records;
 }
 
-$conditions = [
-    'admin'=> 0,
-    'username' => 'Gremis'
-];
+function create($table, $data){
+    global $conexion;
+    $sql = "INSERT INTO $table SET ";
 
-$users = selectOne('users', $conditions);
-dd($users);
+    $i = 0;
+     foreach ($data as $key => $value) {
+        if ($i === 0) {
+        $sql = $sql . " $key=?";
+     } else {
+        $sql = $sql . ", $key=?";
+     }
+        $i++;
+     }
+
+     $stmt = executeQuery($sql, $data);
+     $id = $stmt->insert_id;
+     return $id;
+
+}
+
+function update($table, $id, $data){
+    global $conexion;
+    $sql = "UPDATE $table SET ";
+
+    $i = 0;
+     foreach ($data as $key => $value) {
+        if ($i === 0) {
+        $sql = $sql . " $key=?";
+     } else {
+        $sql = $sql . ", $key=?";
+     }
+        $i++;
+     }
+
+     $sql = $sql . " WHERE id=?";
+     $data['id'] = $id;
+     $stmt = executeQuery($sql, $data);
+     return $stmt->affected_rows;
+}
+
+function delete($table, $id){
+    global $conexion;
+    $sql = "DELETE FROM $table WHERE id=?";
+
+
+     $stmt = executeQuery($sql, ['id' => $id]);
+     return $stmt->affected_rows;
+}
+
+
+
+$id = delete('users', 2);
+
+dd($id);
 
 ?>
