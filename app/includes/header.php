@@ -23,7 +23,7 @@
           <?php if($_SESSION['admin']): ?>
             <li><a href="<?php echo BASE_URL . '/admin/post/index.php' ?>">Tablero</a></li>
         <?php endif; ?>
-            <li><a href="#" class="logout">Salir</a></li>
+            <li><a href="<?php echo BASE_URL . '/logout.php' ?>" class="logout">Salir</a></li>
           </ul>
         </li>
         <?php else: ?>
