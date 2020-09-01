@@ -1,4 +1,6 @@
-<?php include ("path.php"); ?>
+<?php
+include ("path.php");
+include (ROOT_PATH . "/app/database/db.php");?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -16,6 +18,7 @@
 <body>
 
   <?php include (ROOT_PATH . '/app/includes/header.php');?>
+  <?php include (ROOT_PATH . '/app/includes/messages.php'); ?>
 
   <!-- Page wrapper -->
   <div class="page-wrapper">

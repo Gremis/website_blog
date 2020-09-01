@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 require('conect.php');
 
 function dd($value) //to be deleted
