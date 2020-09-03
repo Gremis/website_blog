@@ -1,3 +1,5 @@
+<?php include ("../../path.php"); ?>
+<?php include (ROOT_PATH . "/app/controllers/topics.php"); ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,45 +16,22 @@
   <title>Admin - Crear Temas</title>
 </head>
 <body>
-  <!-- header -->
-  <header class="clearfix">
-    <div class="logo">
-      <!-- <img src="images/logo-placeholder.png" alt="Logo"> -->
-    </div>
-    <div class="fa fa-reorder menu-toggle"></div>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li>
-          <a href="#" class="userinfo">
-            <i class="fa fa-user"></i>
-            Gremis Tovar
-            <i class="fa fa-chevron-down"></i>
-          </a>
-          <ul class="dropdown">
-            <li><a href="#">Tablero</a></li>
-            <li><a href="#" class="logout">Salir</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- // header -->
-  <div class="admin-wrapper clearfix">
-    <!-- Left Sidebar -->
-    <div class="left-sidebar">
-    <ul>
-        <li><a href="../posts/index.php">Administrar Publicaciones</a></li>
-        <li><a href="../topics/index.php">Administrar Temas</a></li>
-        <li><a href="../users/index.php">Administrar Usuarios</a></li>
-      </ul>
-    </div>
-    <!-- // Left Sidebar -->
+
+
+<?php include (ROOT_PATH . '/app/includes/adminHeader.php');?>
+
+
+  <div class="admin-wrapper">
+
+
+  <?php include (ROOT_PATH . '/app/includes/adminSidebar.php');?>
+
+
     <!-- Admin Content -->
-    <div class="admin-content clearfix">
+    <div class="admin-content">
       <div class="button-group">
-        <a href="create.php" class="btn btn-sm">Agregar Tema</a>
-        <a href="index.php" class="btn btn-sm">Administrar Temas</a>
+        <a href="create.php" class="btn btn-big">Agregar Tema</a>
+        <a href="index.php" class="btn btn-big">Administrar Temas</a>
       </div>
       <div class="">
         <h2 style="text-align: center;">Crear Tema</h2>
@@ -63,10 +42,10 @@
           </div>
           <div class="input-group">
             <label>Descripción</label>
-            <textarea class="text-input" name="description" id="description"></textarea>
+            <textarea class="text-input" name="description" id="body"></textarea>
           </div>
           <div class="input-group">
-            <button type="submit" name="save-topic" class="btn" >Guardar Tema</button>
+            <button type="submit" name="add-topic" class="btn btn-sm" >Guardar Tema</button>
           </div>
         </form>
       </div>

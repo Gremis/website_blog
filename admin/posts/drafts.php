@@ -1,3 +1,4 @@
+<?php include ("../../path.php"); ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,40 +15,14 @@
   <title>Admin - Administrar borradores</title>
 </head>
 <body>
-  <!-- header -->
-  <header class="clearfix">
-    <div class="logo">
-      <!-- <img src="images/logo-placeholder.png" alt="Logo"> -->
-    </div>
-    <div class="fa fa-reorder menu-toggle"></div>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li>
-          <a href="#" class="userinfo">
-            <i class="fa fa-user"></i>
-            Gremis Tovar
-            <i class="fa fa-chevron-down"></i>
-          </a>
-          <ul class="dropdown">
-            <li><a href="#">Tablero</a></li>
-            <li><a href="#" class="logout">Salir</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- // header -->
+
+
+<?php include (ROOT_PATH . '/app/includes/adminHeader.php');?>
+
   <div class="admin-wrapper clearfix">
-    <!-- Left Sidebar -->
-    <div class="left-sidebar">
-    <ul>
-        <li><a href="index.php">Administrar Publicaciones</a></li>
-        <li><a href="../topics/index.php">Administrar Temas</a></li>
-        <li><a href="../users/index.php">Administrar Usuarios</a></li>
-      </ul>
-    </div>
-    <!-- // Left Sidebar -->
+
+<?php include (ROOT_PATH . '/app/includes/adminSidebar.php');?>
+
     <!-- Admin Content -->
     <div class="admin-content clearfix">
       <div class="button-group">

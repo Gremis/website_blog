@@ -1,3 +1,6 @@
+<?php include ("../../path.php"); ?>
+<?php include (ROOT_PATH . "/app/controllers/topics.php"); ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,56 +17,35 @@
   <title>Admin - Actualizar Tema</title>
 </head>
 <body>
-  <!-- header -->
-  <header class="clearfix">
-    <div class="logo">
-      <!-- <img src="images/logo-placeholder.png" alt="Logo"> -->
-    </div>
-    <div class="fa fa-reorder menu-toggle"></div>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li>
-          <a href="#" class="userinfo">
-            <i class="fa fa-user"></i>
-            Gremis Tovar
-            <i class="fa fa-chevron-down"></i>
-          </a>
-          <ul class="dropdown">
-            <li><a href="#">Tablero</a></li>
-            <li><a href="#" class="logout">Salir</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- // header -->
-  <div class="admin-wrapper clearfix">
-    <!-- Left Sidebar -->
-    <div class="left-sidebar">
-    <ul>
-        <li><a href="../posts/index.php">Administrar Publicaciones</a></li>
-        <li><a href="../topics/index.php">Administrar Temas</a></li>
-        <li><a href="../users/index.php">Administrar Usuarios</a></li>
-      </ul>
-    </div>
-    <!-- // Left Sidebar -->
+
+<?php include (ROOT_PATH . '/app/includes/adminHeader.php');?>
+
+
+  <div class="admin-wrapper">
+
+
+  <?php include (ROOT_PATH . '/app/includes/adminSidebar.php');?>
+
+
     <!-- Admin Content -->
-    <div class="admin-content clearfix">
+    <div class="admin-content">
       <div class="button-group">
         <a href="create.php" class="btn btn-sm">Agregar Tema</a>
         <a href="index.php" class="btn btn-sm">Administrar Tema</a>
       </div>
       <div class="">
-        <h2 style="text-align: center;">Actualizar Tema</h2>
-        <form action="create.php" method="post">
+        <h2 style="text-align: center;">Editar Tema</h2>
+        <form action="edit.php" method="post">
+
+        <input type="hidden" name="id" value="<?php echo $id; ?>">
+
           <div class="input-group">
             <label>Nombre</label>
-            <input type="text" name="name" class="text-input">
+            <input type="text" name="name" value="<?php echo $name; ?>" class="text-input">
           </div>
           <div class="input-group">
             <label>Descripción</label>
-            <textarea class="text-input" name="description" id="description"></textarea>
+            <textarea class="text-input" name="description" id="body"><?php echo $description; ?></textarea>
           </div>
           <div class="input-group">
             <button type="submit" name="update-topic" class="btn" >Actualizar Tema</button>
