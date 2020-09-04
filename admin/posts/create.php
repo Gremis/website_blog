@@ -1,4 +1,6 @@
 <?php include ("../../path.php"); ?>
+<?php include (ROOT_PATH . "/app/controllers/posts.php"); ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -40,22 +42,22 @@
             <label>Cuerpo</label>
             <textarea class="text-input" name="body" id="body"></textarea>
           </div>
+          <div>
+            <label>Imagen</label>
+            <input type="file" name="image" class="text-input">
+          </div>
           <div class="input-group">
             <label>Tema</label>
-            <select class="text-input" name="topic">
-              <option>Vida</option>
-              <option>Poesía</option>
-              <option>Inspiración</option>
-              <option>Lección de vida</option>
+            <select class="text-input" name="topic_id">
+              <option></option>
+              <?php foreach ($topics as $key => $topic): ?>
+              <option value="<?php echo $topic['id']; ?>"><?php echo $topic['name']; ?></option>
+              <?php endforeach; ?>
+
             </select>
           </div>
           <div class="input-group">
-            <label>
-              <input type="checkbox" name="publish" /> Publicar
-            </label>
-          </div>
-          <div class="input-group">
-            <button type="submit" name="save-post" class="btn">Guardar Publicación</button>
+            <button type="submit" name="add-post" class="btn">Guardar Publicación</button>
           </div>
         </form>
       </div>

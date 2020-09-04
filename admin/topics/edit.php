@@ -34,6 +34,9 @@
         <a href="index.php" class="btn btn-sm">Administrar Tema</a>
       </div>
       <div class="">
+
+      <?php include (ROOT_PATH . "/app/helpers/formErrors.php"); ?>
+
         <h2 style="text-align: center;">Editar Tema</h2>
         <form action="edit.php" method="post">
 

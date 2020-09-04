@@ -1,6 +1,7 @@
 <?php
 include ("path.php");
-include (ROOT_PATH . "/app/database/db.php");?>
+include (ROOT_PATH . "/app/controllers/topics.php"); ?>
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -145,30 +146,9 @@ include (ROOT_PATH . "/app/database/db.php");?>
         <div class="section topics">
           <h2>Tópicos</h2>
           <ul>
-            <a href="#">
-              <li>Poemas</li>
-            </a>
-            <a href="#">
-              <li>Terror</li>
-            </a>
-            <a href="#">
-              <li>Ficción</li>
-            </a>
-            <a href="#">
-              <li>Biografías</li>
-            </a>
-            <a href="#">
-              <li>Motivación</li>
-            </a>
-            <a href="#">
-              <li>Inspiración</li>
-            </a>
-            <a href="#">
-              <li>Aprendizaje</li>
-            </a>
-            <a href="#">
-              <li>Autocrecimiento</li>
-            </a>
+           <?php foreach ($topics as $key => $topic): ?>
+            <li><a href="#"><?php echo $topic['name']; ?></a></li>
+            <?php endforeach; ?>
           </ul>
         </div>
         <!-- // topics -->

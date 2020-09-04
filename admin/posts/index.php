@@ -1,4 +1,6 @@
 <?php include ("../../path.php"); ?>
+<?php include (ROOT_PATH . "/app/controllers/posts.php"); ?>
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -31,80 +33,32 @@
       </div>
       <div class="">
         <h2 style="text-align: center;">Administrar Publicaciones</h2>
+        
         <table>
           <thead>
-            <th>N</th>
+            <th>SN</th>
             <th>Título</th>
             <th>Autor</th>
             <th colspan="3">Acción</th>
           </thead>
           <tbody>
+
+          <?php foreach ($posts as $key => $post): ?>
             <tr class="rec">
-              <td>1</td>
-              <td>
-                <a href="#">Un reemplazo para las resoluciones de año nuevo: un desafío de 12 meses</a>
-              </td>
+              <td><?php echo $key + 1; ?></td>
+              <td><?php echo $post['title']; ?></td>
               <td>Gremis</td>
-              <td>
-                <a href="edit.php" class="edit">
-                  Editar
-                </a>
-              </td>
-              <td>
-                <a href="#" class="delete">
-                  Eliminar
-                </a>
-              </td>
-              <td>
-                <a href="#" class="publish">
-                  Publicar
-                </a>
-              </td>
+              <td><a href="edit.php" class="edit">Editar</a></td>
+              <td><a href="#" class="delete">Eliminar</a></td>
+              
+              <?php if ($post['published']): ?>
+              <td><a href="#" class="unpublish">Anular Publicación</a></td>
+              <?php else: ?>
+              <td><a href="#" class="publish">Publicar</a></td>
+              <?php endif; ?>
             </tr>
-            <tr class="rec">
-              <td>2</td>
-              <td>
-                <a href="#">Porque la vida es bella</a>
-              </td>
-              <td>Gremis</td>
-              <td>
-                <a href="edit.php" class="edit">
-                  Editar
-                </a>
-              </td>
-              <td>
-                <a href="#" class="delete">
-                  Eliminar
-                </a>
-              </td>
-              <td>
-                <a href="#" class="publish">
-                  Publicar
-                </a>
-              </td>
-            </tr>
-            <tr class="rec">
-              <td>3</td>
-              <td>
-                <a href="#">Hechos interesantes sobre la historia del mundo</a>
-              </td>
-              <td>Gremis</td>
-              <td>
-                <a href="edit.php" class="edit">
-                  Editar
-                </a>
-              </td>
-              <td>
-                <a href="#" class="delete">
-                  Eliminar
-                </a>
-              </td>
-              <td>
-                <a href="#" class="publish">
-                  Publicar
-                </a>
-              </td>
-            </tr>
+          <?php endforeach; ?>
+          
           </tbody>
         </table>
       </div>
