@@ -25,10 +25,21 @@ if(isset($_GET['id'])){
     $published = $post['published'];
 }
 
+
+
 if(isset($_GET['delete_id'])){
     $count = delete($table, $_GET['delete_id']);
     $_SESSION['message'] = "Publicación eliminada con exito";
     $_SESSION['type'] = "Salida con éxito";
+    header("location: " . BASE_URL . "/admin/posts/index.php");
+    exit();
+}
+
+
+if(isset($_GET['published']) && isset($_GET['p_id'])){
+    $published = $_GET['published'];
+    $p_id = $_GET['p_id'];
+    $count = update ($table, $p_id, ['published' => $published]);
     header("location: " . BASE_URL . "/admin/posts/index.php");
     exit();
 }

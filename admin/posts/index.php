@@ -54,9 +54,9 @@
               <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" class="delete">Eliminar</a></td>
               
               <?php if ($post['published']): ?>
-              <td><a href="#" class="unpublish">Anular Publicación</a></td>
+              <td><a href="edit.php?published=0&p_id=<?php echo $post['id']; ?>" class="unpublish">Anular Publicación</a></td>
               <?php else: ?>
-              <td><a href="#" class="publish">Publicar</a></td>
+              <td><a href="edit.php?published=1&p_id=<?php echo $post['id']; ?>" class="publish">Publicar</a></td>
               <?php endif; ?>
             </tr>
           <?php endforeach; ?>
