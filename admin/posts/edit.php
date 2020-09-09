@@ -1,4 +1,6 @@
 <?php include ("../../path.php"); ?>
+<?php include (ROOT_PATH . "/app/controllers/posts.php"); ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -31,28 +33,50 @@
       </div>
       <div class="">
         <h2 style="text-align: center;">Editar Publicaciones</h2>
-        <form action="create.php" method="post">
-          <div class="input-group">
-            <label>Title</label>
-            <input type="text" name="title" class="text-input">
+        <form action="edit.php" method="post" enctype="multipart/form-data">
+        
+        <input type="hidden" name="id" value = "<?php echo $id; ?>">
+
+        <div class="input-group">
+            <label>Título</label>
+            <input type="text" name="title" value = "<?php echo $title; ?>" class="text-input">
           </div>
           <div class="input-group">
             <label>Cuerpo</label>
-            <textarea class="text-input" name="body" id="body"></textarea>
+            <textarea type="text" class="text-input" name="body" id="body"><?php echo $body; ?></textarea>
+          </div>
+          <div>
+            <label>Imagen</label>
+            <input type="file" name="image" class="text-input">
           </div>
           <div class="input-group">
-            <label>Temas</label>
-            <select class="text-input" name="topic">
-              <option>Vida</option>
-              <option>Poesías</option>
-              <option>Inspiración</option>
-              <option>Lección de vida</option>
+            <label>Tema</label>
+            <select class="text-input" name="topic_id">
+              <option></option>
+              <?php foreach ($topics as $key => $topic): ?>
+              <?php if (!empty($topic_id) && $topic_id == $topic['id']): ?>
+                <option selected value="<?php echo $topic['id']; ?>"><?php echo $topic['name']; ?></option>
+              <?php else: ?>
+                <option value="<?php echo $topic['id']; ?>"><?php echo $topic['name']; ?></option>
+              <?php endif; ?>
+              <?php endforeach; ?>
+
             </select>
           </div>
-          <div class="input-group">
-            <label>
-              <input type="checkbox" name="publish" /> Publicar
-            </label>
+          <div>
+
+            <?php if (empty($published) && $published == 0): ?>
+          <label>
+          <input type="checkbox" name="published">
+          Publicar
+          </label>
+            <?php else: ?>
+              <label>
+          <input type="checkbox" name="published">
+          Publicar
+          </label>
+            <?php endif; ?>
+
           </div>
           <div class="input-group">
             <button type="submit" name="update-post" class="btn" >Actualizar publicación</button>

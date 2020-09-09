@@ -50,8 +50,8 @@
               <td><?php echo $key + 1; ?></td>
               <td><?php echo $post['title']; ?></td>
               <td>Gremis</td>
-              <td><a href="edit.php" class="edit">Editar</a></td>
-              <td><a href="#" class="delete">Eliminar</a></td>
+              <td><a href="edit.php?id=<?php echo $post['id']; ?>" class="edit">Editar</a></td>
+              <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" class="delete">Eliminar</a></td>
               
               <?php if ($post['published']): ?>
               <td><a href="#" class="unpublish">Anular Publicación</a></td>
