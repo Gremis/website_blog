@@ -33,14 +33,17 @@
       </div>
       <div class="">
         <h2 style="text-align: center;">Crear Publicaciones</h2>
-        <form action="create.php" method="post">
+
+        <?php include (ROOT_PATH . '/app/helpers/formErrors.php'); ?>
+
+        <form action="create.php" method="post" enctype="multipart/form-data">
           <div class="input-group">
-            <label>Title</label>
-            <input type="text" name="title" class="text-input">
+            <label>Título</label>
+            <input type="text" name="title" value = "<?php echo $title; ?>" class="text-input">
           </div>
           <div class="input-group">
             <label>Cuerpo</label>
-            <textarea class="text-input" name="body" id="body"></textarea>
+            <textarea type="text" class="text-input" name="body" id="body"><?php echo $body; ?></textarea>
           </div>
           <div>
             <label>Imagen</label>
@@ -51,10 +54,29 @@
             <select class="text-input" name="topic_id">
               <option></option>
               <?php foreach ($topics as $key => $topic): ?>
-              <option value="<?php echo $topic['id']; ?>"><?php echo $topic['name']; ?></option>
+              <?php if (!empty($topic_id) && $topic_id == $topic['id']): ?>
+                <option selected value="<?php echo $topic['id']; ?>"><?php echo $topic['name']; ?></option>
+              <?php else: ?>
+                <option value="<?php echo $topic['id']; ?>"><?php echo $topic['name']; ?></option>
+              <?php endif; ?>
               <?php endforeach; ?>
 
             </select>
+          </div>
+          <div>
+
+            <?php if (empty($published)): ?>
+          <label>
+          <input type="checkbox" name="published">
+          Publicar
+          </label>
+            <?php else: ?>
+              <label>
+          <input type="checkbox" name="published">
+          Publicar
+          </label>
+            <?php endif; ?>
+
           </div>
           <div class="input-group">
             <button type="submit" name="add-post" class="btn">Guardar Publicación</button>

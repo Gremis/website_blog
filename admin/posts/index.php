@@ -33,7 +33,9 @@
       </div>
       <div class="">
         <h2 style="text-align: center;">Administrar Publicaciones</h2>
-        
+
+        <?php include (ROOT_PATH . '/app/includes/messages.php');?>
+
         <table>
           <thead>
             <th>SN</th>
