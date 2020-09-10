@@ -1,4 +1,5 @@
 <?php include ("../../path.php"); ?>
+<?php include (ROOT_PATH . "/app/controllers/users.php"); ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -32,29 +33,25 @@
       </div>
       <div class="">
         <h2 style="text-align: center;">Administrar Usuarios</h2>
+        
+        <?php include (ROOT_PATH . '/app/includes/messages.php');?>
+
         <table>
           <thead>
             <th>N</th>
             <th>Usuario</th>
-            <th colspan="3">Acción</th>
+            <th colspan="2">Acción</th>
           </thead>
           <tbody>
+          <?php foreach ($admin_users as $key => $user): ?>
             <tr class="rec">
-              <td>1</td>
-              <td>
-                <a href="#">Gremis Tovar</a>
-              </td>
-              <td>
-                <a href="edit.php" class="edit">
-                  Editar
-                </a>
-              </td>
-              <td>
-                <a href="#" class="delete">
-                  Eliminar
-                </a>
-              </td>
+              <td><?php echo $key + 1; ?></td>
+              <td><?php echo $user['username']; ?><a href="#"></a></td>
+              <td><?php echo $user['email']; ?><a href="#"></a></td>
+              <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">Editar</a></td>
+              <td><a href="index.php?delete_id=<?php echo $user['id']; ?>" class="delete">Eliminar</a></td>
             </tr>
+          <?php endforeach; ?>
           </tbody>
         </table>
       </div>
