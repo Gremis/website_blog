@@ -35,10 +35,10 @@
       </div>
       <div class="">
 
-      <?php include (ROOT_PATH . "/app/helpers/formErrors.php"); ?>
 
         <h2 style="text-align: center;">Crear Tema</h2>
-        <form action="create.php" method="post">
+           <?php include (ROOT_PATH . "/app/helpers/formErrors.php"); ?>
+          <form action="create.php" method="post">
           <div class="input-group">
             <label>Nombre</label>
             <input type="text" name="name" value="<?php echo $name; ?>"  class="text-input">

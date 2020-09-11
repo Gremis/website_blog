@@ -10,8 +10,15 @@ function validateTopic($topic){
 
     $existingTopic = selectOne('topics', ['name' => $topic['name']]);
     if ($existingTopic){
-        array_push($errors, 'Este nombre ya existe');
+        if (isset($topic['update-topic']) && $existingTopic['id'] != $post['id']){ 
+        array_push($errors, 'Ya existe este nombre');
     }
+
+    if(isset($topic['add-topic'])){
+        array_push($errors, 'Ya existe este nombre');
+    }
+    }
+
 
     return $errors;
 }

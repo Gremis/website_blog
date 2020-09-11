@@ -19,10 +19,16 @@ function validateUser($user){
     if ($user['passwordConf'] !== $user['password']){
         array_push($errors, 'Contraseñas NO COINCIDEN');
     }
-
+    
     $existingUser = selectOne('users', ['email' => $user['email']]);
     if ($existingUser){
-        array_push($errors, 'El Email ya existe');
+        if (isset($user['update-user']) && $existingUser['id'] != $user['id']){ 
+        array_push($errors, 'Ya existe este email');
+    }
+
+    if(isset($user['create-admin'])){
+        array_push($errors, 'Ya existe este email');
+    }
     }
 
     return $errors;

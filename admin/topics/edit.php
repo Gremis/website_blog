@@ -35,9 +35,9 @@
       </div>
       <div class="">
 
-      <?php include (ROOT_PATH . "/app/helpers/formErrors.php"); ?>
 
         <h2 style="text-align: center;">Editar Tema</h2>
+         <?php include (ROOT_PATH . "/app/helpers/formErrors.php"); ?>
         <form action="edit.php" method="post">
 
         <input type="hidden" name="id" value="<?php echo $id; ?>">

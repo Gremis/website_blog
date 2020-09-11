@@ -18,7 +18,13 @@ function validatePost($post){
 
     $existingPost = selectOne('posts', ['title' => $post['title']]);
     if ($existingPost){
+        if (isset($post['update-post']) && $existingPost['id'] != $post['id']){ 
         array_push($errors, 'Ya existe una publicación con este título');
+    }
+
+    if(isset($post['add-post'])){
+        array_push($errors, 'Ya existe una publicación con este título');
+    }
     }
 
     return $errors;
