@@ -6,18 +6,22 @@
     <div class="fa fa-bars menu-toggle"></div>
     <nav>
       <ul>
+      <?php if(isset($_SESSION['username'])): ?>
+
         <li><a href="#">Inicio</a></li>
-        <li>
-          <a href="#" class="userinfo">
-            <i class="fa fa-user"></i>
-            Gremis Tovar
-            <i class="fa fa-chevron-down"></i>
-          </a>
-          <ul class="dropdown">
-            <li><a href="#">Tablero</a></li>
-            <li><a href="#" class="logout">Salir</a></li>
-          </ul>
-        </li>
+          <li>
+            <a href="#" class="userinfo">
+              <i class="fa fa-user"></i>
+              <?php echo $_SESSION['username']; ?>
+              <i class="fa fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown">
+              <li><a href="<?php echo BASE_URL . '/logout.php'; ?>" class="logout">Salir</a></li>
+            </ul>
+          </li>
+
+      <?php endif; ?>
+       
       </ul>
     </nav>
   </header>
