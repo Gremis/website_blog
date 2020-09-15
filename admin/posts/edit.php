@@ -23,7 +23,9 @@
 
   <div class="admin-wrapper clearfix">
 
-<?php include (ROOT_PATH . '/app/includes/adminSidebar.php');?>
+<?php include (ROOT_PATH . '/app/includes/adminSidebar.php');
+adminOnly();
+?>
 
     <!-- Admin Content -->
     <div class="admin-content clearfix">

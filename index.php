@@ -5,7 +5,12 @@ include (ROOT_PATH . "/app/controllers/topics.php");
 $posts = array();
 $postsTitle = 'Publicaciones Recientes';
 
-if(isset($_POST['search-term'])){
+
+
+if(isset($_GET['t_id'])){
+  $posts = getPostsByTopicId($_GET['t_id']);
+  $postsTitle = "Buscaste por una publicación antigua'" . $_GET['name'] . "'";
+} else if (isset($_POST['search-term'])){
   $postsTitle = "Buscaste por '" . $_POST['search-term'] . "'";
   $posts = searchPosts($_POST['search-term']);
 } else {
@@ -41,17 +46,16 @@ if(isset($_POST['search-term'])){
       <div class="posts-wrapper">
     <?php foreach ($posts as $post): ?>
         <div class="post">
-          <div class="inner-post">
+
             <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
             <div class="post-info">
-              <h4><a href="single.php"><?php echo $post['title']; ?></a></h3>
+              <h4><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h3>
                 <div>
                   <i class="fa fa-user-o"><?php echo $post['username']; ?></i>
                   &nbsp;
                   <i class="fa fa-calendar"><?php echo date('j F, Y', strtotime($post['created_at'])); ?></i>
                 </div>
-            </div>
-          </div>
+          
     <?php endforeach; ?>
       </div>
     </div>
@@ -65,7 +69,7 @@ if(isset($_POST['search-term'])){
         <div class="post clearfix">
           <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" class="post-image" alt="">
           <div class="post-content">
-            <h2 class="post-title"><a href="single.php"><?php echo $post['title']; ?></a></h2>
+            <h2 class="post-title"><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
             <div class="post-info">
               <i class="fa fa-user-o"><?php echo $post['username']; ?></i>
               &nbsp;
@@ -74,7 +78,7 @@ if(isset($_POST['search-term'])){
             <p class="post-body">
             <?php echo html_entity_decode(substr($post['body'], 0, 150) . '...'); ?>
             </p>
-            <a href="single.php" class="read-more">Leer Más</a>
+            <a href="single.php?id=<?php echo $post['id']; ?>" class="read-more">Leer Más</a>
           </div>
         </div>
         <?php endforeach; ?>
@@ -94,7 +98,7 @@ if(isset($_POST['search-term'])){
           <h2>Tópicos</h2>
           <ul>
            <?php foreach ($topics as $key => $topic): ?>
-            <li><a href="#"><?php echo $topic['name']; ?></a></li>
+            <a href="<?php echo BASE_URL . '/index.php?t_id=' . $topic['id'] . '&name' . $topic['name']; ?>"><li><?php echo $topic['name']; ?></li></a>
             <?php endforeach; ?>
           </ul>
         </div>
