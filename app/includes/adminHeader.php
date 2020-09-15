@@ -8,7 +8,7 @@
       <ul>
       <?php if(isset($_SESSION['username'])): ?>
 
-        <li><a href="#">Inicio</a></li>
+        <li><a href="<?php echo BASE_URL . '/index.php'; ?>">Inicio</a></li>
           <li>
             <a href="#" class="userinfo">
               <i class="fa fa-user"></i>

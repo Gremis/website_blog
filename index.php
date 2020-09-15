@@ -1,8 +1,18 @@
 <?php
 include ("path.php");
-include (ROOT_PATH . "/app/controllers/topics.php"); ?>
+include (ROOT_PATH . "/app/controllers/topics.php");
 
+$posts = array();
+$postsTitle = 'Publicaciones Recientes';
 
+if(isset($_POST['search-term'])){
+  $postsTitle = "Buscaste por '" . $_POST['search-term'] . "'";
+  $posts = searchPosts($_POST['search-term']);
+} else {
+  $posts = getPublishedPosts();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -29,110 +39,47 @@ include (ROOT_PATH . "/app/controllers/topics.php"); ?>
       <i class="fa fa-chevron-right next"></i>
       <i class="fa fa-chevron-left prev"></i>
       <div class="posts-wrapper">
+    <?php foreach ($posts as $post): ?>
         <div class="post">
           <div class="inner-post">
-            <img src="assets/images/image_7.png" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+            <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
             <div class="post-info">
-              <h4><a href="single.php">Un día tu vida pasará ante tus ojos</a></h3>
+              <h4><a href="single.php"><?php echo $post['title']; ?></a></h3>
                 <div>
-                  <i class="fa fa-user-o"></i> Gremis Tovar
+                  <i class="fa fa-user-o"><?php echo $post['username']; ?></i>
                   &nbsp;
-                  <i class="fa fa-calendar"></i> 12 de agosto 2020
+                  <i class="fa fa-calendar"><?php echo date('j F, Y', strtotime($post['created_at'])); ?></i>
                 </div>
             </div>
           </div>
-        </div>
-        <div class="post">
-          <div class="inner-post">
-            <img src="assets/images/image_6.png" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
-            <div class="post-info">
-              <h4><a href="single.php">Un día tu vida pasará ante tus ojos</a></h3>
-                <div>
-                  <i class="fa fa-user-o"></i> Gremis Tovar
-                  &nbsp;
-                  <i class="fa fa-calendar"></i> 12 de agosto 2020
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div class="inner-post">
-            <img src="assets/images/image_5.png" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
-            <div class="post-info">
-              <h4><a href="single.php">Un día tu vida pasará ante tus ojos</a></h3>
-                <div>
-                  <i class="fa fa-user-o"></i> Gremis Tovar
-                  &nbsp;
-                  <i class="fa fa-calendar"></i> 12 de agosto 2020
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div class="inner-post">
-            <img src="assets/images/image_4.png" alt="" style="height: 200px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;">
-            <div class="post-info">
-              <h4><a href="single.php">Un día tu vida pasará ante tus ojos</a></h3>
-              <div>
-                <i class="fa fa-user-o"></i> Gremis Tovar
-                &nbsp;
-                <i class="fa fa-calendar"></i> 12 de agosto 2020
-              </div>
-            </div>
-          </div>
-        </div>
+    <?php endforeach; ?>
       </div>
     </div>
     <!-- // Posts Slider -->
     <!-- content -->
     <div class="content clearfix">
       <div class="page-content">
-        <h1 class="recent-posts-title">Publicaciones Recientes</h1>
+        <h1 class="recent-posts-title"><?php echo $postsTitle; ?></h1>
+        
+        <?php foreach ($posts as $post): ?>
         <div class="post clearfix">
-          <img src="assets/images/image_1.png" class="post-image" alt="">
+          <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" class="post-image" alt="">
           <div class="post-content">
-            <h2 class="post-title"><a href="#">Las canciones más fuertes y dulces aún quedan por cantar</a></h2>
+            <h2 class="post-title"><a href="single.php"><?php echo $post['title']; ?></a></h2>
             <div class="post-info">
-              <i class="fa fa-user-o"></i> Gremis Tovar
+              <i class="fa fa-user-o"><?php echo $post['username']; ?></i>
               &nbsp;
-              <i class="fa fa-calendar"></i> 12 de agosto 2020
+              <i class="fa fa-calendar"> <?php echo date('j F, Y', strtotime($post['created_at'])); ?></i>
             </div>
-            <p class="post-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus expedita tempora
-              qui sunt! Ipsum nihil unde obcaecati.
+            <p class="post-body">
+            <?php echo html_entity_decode(substr($post['body'], 0, 150) . '...'); ?>
             </p>
-            <a href="#" class="read-more">Leer Más</a>
+            <a href="single.php" class="read-more">Leer Más</a>
           </div>
         </div>
-        <div class="post clearfix">
-          <img src="assets/images/image_2.png" class="post-image" alt="">
-          <div class="post-content">
-            <h2 class="post-title"><a href="#">Ese amor es todo lo que hay, es todo lo que sabemos del amor</h2></a>
-            <div class="post-info">
-              <i class="fa fa-user-o"></i> Gremis Tovar
-              &nbsp;
-              <i class="fa fa-calendar"></i> 12 de agosto 2020
-            </div>
-            <p class="post-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus expedita tempora
-              qui sunt! Ipsum nihil unde obcaecati.
-            </p>
-            <a href="#" class="read-more">Leer Más</a>
-          </div>
-        </div>
-        <div class="post clearfix">
-          <img src="assets/images/image_3.png" class="post-image" alt="">
-          <div class="post-content">
-            <h2 class="post-title"><a href="#">Haz cualquier cosa, pero deja que produzca alegría</a></h2>
-            <div class="post-info">
-              <i class="fa fa-user-o"></i> Gremis Tovar
-              &nbsp;
-              <i class="fa fa-calendar"></i> 12 de agosto 2020
-            </div>
-            <p class="post-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus expedita tempora
-              qui sunt! Ipsum nihil unde obcaecati.
-            </p>
-            <a href="#" class="read-more">Leer Más</a>
-          </div>
-        </div>
+        <?php endforeach; ?>
+
+        
       </div>
       <div class="sidebar">
         <!-- Search -->
